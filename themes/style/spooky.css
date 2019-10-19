@@ -54,6 +54,11 @@ abbr[title], dfn[title] {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  display: block;
+}
+th, td{
+  padding: 1rem;
+  border: 1px solid white;
 }
 
 hr {
@@ -75,6 +80,11 @@ select, input, textarea, button {
 
 pre, code, kbd, samp {
   font-family: monospace, sans-serif;
+
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }
 
 a {
@@ -281,7 +291,7 @@ li > ol, li > ul {
 .deck-container {
   font-size: 16px;
   line-height: 1.25;
-  color: #444;
+  color: white;
 }
 
 .slide {
@@ -314,13 +324,14 @@ h3 {
 }
 
 pre {
-  border-color: #333;
+  border: 1px solid white;
 }
 pre code {
   color: #fff;
 }
 
 code {
+  padding: 2rem;
   color: DarkOrange;
 }
 
@@ -361,8 +372,8 @@ a:hover, a:focus {
 .deck-container {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 1.75em;
-  color: #aaa;
-  background: #000;
+  color: white;
+  background: #3e2a41;
 }
 .deck-container > .slide {
   padding: 0 48px;
@@ -418,4 +429,44 @@ a:hover, a:focus {
 .no-touch.boxshadow .deck-menu .slide:hover {
   background: #000;
   box-shadow: 0 0 20px DarkOrange, 0 0 5px #fff;
+}
+
+b{
+  font-weight: bold;
+}
+
+.flexContainer{
+  display: flex;
+}
+.flexContainer > *{
+  width: 50%;
+}
+.whiteFill{
+  fill: white;
+}
+#ghostBody{
+  animation: float 2s infinite
+}
+#ghostShadow{
+  transform-origin: center;
+  animation: shadowPulse 2s infinite
+}
+@keyframes float {
+  0% { 
+    transform: translateY(0%); 
+    opacity: 1;
+  }
+  50% { 
+    transform: translateY(-5%);
+    opacity: .5;
+  }
+  100% { 
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes shadowPulse{
+   0% { transform: scaleX(1); }
+  50% { transform: scaleX(.8); }
+  100% { transform: scaleX(1); }
 }

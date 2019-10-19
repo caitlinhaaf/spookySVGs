@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Getting Started with deck.js</title>
+  <title>Spooky SVGs</title>
 
   <meta name="description" content="A jQuery library for modern HTML presentations">
   <meta name="author" content="Caleb Troughton">
@@ -37,23 +37,102 @@
   <div class="deck-container">
 
     <!-- Begin slides -->
+
     <section class="slide" id="title-slide">
-      <h1>SPOOKY SVG's</h1>
+        <h2>SPOOKY SVG's</h2>
+        <div class="flexContainer">
+            <div style="max-width: 400px;">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 600 900" style="enable-background:new 0 0 600 900;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{opacity:0.5;}
+                </style>
+                <g id="ghostShadow">
+                  <ellipse class="st0" cx="300.3" cy="834.4" rx="182.7" ry="18.1"/>
+                </g>
+                <g id="ghostBody">
+                  <path class="whiteFill" d="M303,49c-109.9,0-199,89.1-199,199v421c0,0-3.8,48,29.1,48s28.9-23,28.9-48s13.5-47.4,30.2-47.4
+                    s30.2,20.4,30.2,47.4s-3.4,48,28.6,48c30,0,29.6-14,29.6-48s13.5-47.4,30.2-47.4c16.7,0,30.2,17.4,30.2,47.4s-4.8,48,27.1,48
+                    s22.5-22,22.5-48s13.5-47.4,30.2-47.4S451,637,451,669s-3.9,48,26.6,48c30.4,0,24.4-48,24.4-48V248C502,138.1,412.9,49,303,49z"/>
+                  <path class="whiteFill" d="M466,750"/>
+                  <g id="ghostMouth">
+                    <path d="M299.6,306.6c16.7,0,30.3-8.3,30.3-18.6h-60.6C269.3,298.3,282.9,306.6,299.6,306.6z"/>
+                  </g>
+                  <g id="ghostLeftEye">
+                    <circle cx="232" cy="243" r="17"/>
+                  </g>
+                  <g id="ghostRightEye">
+                    <circle cx="364" cy="243" r="17"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+    
+          <div>
+            <ul>
+              <li>Wifi is</li>
+              <li>Create an account at <b>www.codepen.io</b></li>
+              <li>Go to <b>XXX</b> and <b>Fork</b> that pen</li>
+              <li>Search "Halloween" on Codepen for some inspiration!</li>
+            </ul>
+          </div>
+
+        </div>
+        
     </section>
 
     <section class="slide" id="images-on-web">
       <h2>Images on the Web</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th>Bitmap</th>
+            <th>Vector</th>
+          </tr>
+          <tr>
+              <td>
+                <ul>
+                  <li>Made up of pixels</li>
+                  <li>Each pixel appears as a tiny square</li>
+                  <li>Each pixel is assigned a colour code</li>
+                  <li>Can be edited in Adobe Photoshop, Paint</li>
+                </ul>
+              </td>
 
-      <h4>Bitmap</h4>
-      <h4>Vectors</h4>
+              <td>
+                  <ul>
+                      <li>Uses math to draw lines and shapes</li>
+                      <li>Can zoom in and enlarge without getting pixelated</li>
+                      <li>Can be edited in Adobe Illustrator, or a code editor!</li>
+                    </ul>
+              </td>
+          </tr>
+
+        </tbody>
+      </table>
 
     </section>
 
     <section class="slide" id="svg-definition">
       <h2>SVG's</h2>
-      <p>
-        Stands for Scalable Vector Graphics
-      </p>
+      <ul>
+        <li>Stands for "Scalable Vector Graphics"</li>
+        <li>Allows us to add or build our own graphics to pages using code</li>
+      </ul>
+      <code>
+          &lt;html&gt;
+            &lt;body&gt;
+              
+            &lt;h1&gt;My first SVG&lt;/h1&gt;
+              
+            &lt;svg width="100" height="100"&gt;
+            &lt;circle cx="50" cy="50" r="40" stroke="green" 
+            stroke-width="4" fill="yellow" /&gt;
+              &lt;/svg&gt;
+              
+              &lt;/body&gt;
+          &lt;/html&gt;
+      </code>
     </section>
 
     <section class="slide" id="css-definition">
@@ -61,10 +140,49 @@
       <ul>
         <li>Stands for Cascading Style Sheets</li>
         <li>Used to add styles to your website (i.e. fonts, colors, layout)</li>
-        <li>Can also be used to add animations  </li>
+        <li>Can also be used to add animations</li>
+        <li>Syntax uses a selector (the element you want to style), and sets of properties and values.</li>
       </ul>
+      <code>
+        p{
+          color: red;
+          back-ground-color: orange;
+        }
+      </code>
         
     </section>
+
+    <section class="slide" id="css-transformations">
+      <h2>CSS Transforms</h2>
+      <ul>
+        <li>Used to scale, move, rotate, or even use 3D effects</li>
+      </ul>
+      <code>
+
+      </code>
+    </section>
+
+    <section class="slide" id="css-animations">
+        <h2>CSS Animations</h2>
+
+        <code>
+            @keyframes float {
+              0% { 
+                transform: translateY(0%); 
+                opacity: 1;
+              }
+              50% { 
+                transform: translateY(-5%);
+                opacity: .5;
+              }
+              100% { 
+                transform: translateY(0%);
+                opacity: 1;
+              }
+            }
+        </code>
+      </section>
+
 
     <!-- <section class="slide" id="how-to-overview">
       <h2>How to Make a Deck</h2>

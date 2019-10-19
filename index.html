@@ -71,13 +71,23 @@
           <div>
             <ul>
               <li>Wifi is</li>
-              <li>Create an account at <b>www.codepen.io</b></li>
-              <li>Go to <b>XXX</b> and <b>Fork</b> that pen</li>
+              <li>Create an account at <b><a href="www.codepen.io">www.codepen.io</a></b></li>
+              <li>Go to <b><a href="http://bit.ly/2MvCFFP">http://bit.ly/2MvCFFP</a></b> and <b>Fork</b> that pen</li>
               <li>Search "Halloween" on Codepen for some inspiration!</li>
             </ul>
           </div>
 
         </div>
+    </section>
+
+    <section class="slide" id="example">
+        <h2>Today's Project</h2>
+        <p class="codepen" data-height="500" data-theme-id="0" data-default-tab="html,result" data-user="caitlinhaaf" data-slug-hash="yLLaWox" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Spooky SVG Workshop">
+            <span>See the Pen <a href="https://codepen.io/caitlinhaaf/pen/yLLaWox">
+            Spooky SVG Workshop</a> by Caitlin Haaf (<a href="https://codepen.io/caitlinhaaf">@caitlinhaaf</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
         
     </section>
 
@@ -91,6 +101,7 @@
           </tr>
           <tr>
               <td>
+                <img style="max-width: 400px" src="images/jackolanternBitmap.jpg"/>
                 <ul>
                   <li>Made up of pixels</li>
                   <li>Each pixel appears as a tiny square</li>
@@ -100,6 +111,7 @@
               </td>
 
               <td>
+                  <img style="max-width: 400px" src="images/jackolantern.svg"/>
                   <ul>
                       <li>Uses math to draw lines and shapes</li>
                       <li>Can zoom in and enlarge without getting pixelated</li>
@@ -107,7 +119,6 @@
                     </ul>
               </td>
           </tr>
-
         </tbody>
       </table>
 
@@ -122,7 +133,6 @@
       <code>
           &lt;html&gt;
             &lt;body&gt;
-              
             &lt;h1&gt;My first SVG&lt;/h1&gt;
               
             &lt;svg width="100" height="100"&gt;
@@ -154,17 +164,25 @@
 
     <section class="slide" id="css-transformations">
       <h2>CSS Transforms</h2>
-      <ul>
-        <li>Used to scale, move, rotate, or even use 3D effects</li>
-      </ul>
-      <code>
+      <p>Used to scale, move, rotate, or even use 3D effects</p>
 
+      <code>
+        #square{
+          transform: rotate(60deg);
+        }
+        #circle{
+          transform: scale(2);
+        }
+        #triangle{
+          transform: translate(100px, 200px);
+        }
       </code>
+
     </section>
 
-    <section class="slide" id="css-animations">
+    <section class="slide" id="css-animations1">
         <h2>CSS Animations</h2>
-
+        <p>Before adding an animation to an element, we have to define the animation.</p>
         <code>
             @keyframes float {
               0% { 
@@ -182,6 +200,56 @@
             }
         </code>
       </section>
+
+    <section class="slide" id="css-animations2">
+          <h2>CSS Animations</h2>
+          <p>
+            When applying an animation to an element, we have the define:
+            <ul>
+              <li>The name of the animation we want to use</li>
+              <li>The length of the animation we want</li>
+              <li>How many times we want to play the animation</li>
+            </ul>
+
+          </p>
+          <code>
+              #ghost {
+                animation: float 4s infinite;
+              }
+          </code>
+    </section>
+
+    <section class="slide" id="svg-shapes">
+        <h2>Let's Look at some SVG Shapes!</h2>
+        <a href="http://bit.ly/2MvWCMQ">http://bit.ly/2MvWCMQ</a>
+        <p class="codepen" data-height="500" data-theme-id="0" data-default-tab="html,result" data-user="caitlinhaaf" data-slug-hash="XWWNMxE" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Basic SVG Shapes">
+            <span>See the Pen <a href="https://codepen.io/caitlinhaaf/pen/XWWNMxE">
+            Basic SVG Shapes</a> by Caitlin Haaf (<a href="https://codepen.io/caitlinhaaf">@caitlinhaaf</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="slide" id="css-animations2">
+        <h2>Let's Get Started!</h2>
+        <a href="http://bit.ly/2MvCFFP">http://bit.ly/2MvCFFP</a>
+        <p class="codepen" data-height="500" data-theme-id="0" data-default-tab="html,result" data-user="caitlinhaaf" data-slug-hash="VwwmzWV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Spooky SVG Workshop - Starter">
+            <span>See the Pen <a href="https://codepen.io/caitlinhaaf/pen/VwwmzWV">
+            Spooky SVG Workshop - Starter</a> by Caitlin Haaf (<a href="https://codepen.io/caitlinhaaf">@caitlinhaaf</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="slide" id="resources">
+        <h2>That's It!</h2>
+        <ul>
+          <li>The finished project: <a href="http://bit.ly/2BsVoLU">http://bit.ly/2BsVoLU</a></li>
+          <li>List of CSS transforms: <a href="https://www.w3schools.com/cssref/css3_pr_transform.asp">https://www.w3schools.com/cssref/css3_pr_transform.asp</a></li>
+
+        </ul>
+
+    </section>
 
 
     <!-- <section class="slide" id="how-to-overview">
